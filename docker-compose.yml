@@ -1,0 +1,9 @@
+version: '3'
+services:
+  # 服务名称
+  eurekaServer:
+    # 镜像:版本
+    image: gateway/gateway
+    # 映射容器80端口到本地80端口
+    ports:
+      - "8084:8084"
