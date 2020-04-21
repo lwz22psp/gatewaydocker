@@ -1,0 +1,22 @@
+server:
+  port: 8084
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+  application:
+    name: oldwestgate-gateway
+
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://154.8.183.84:8888/eureka/
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
