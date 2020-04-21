@@ -11,7 +11,7 @@ echo "git pull finish"
 
 docker-compose down
 
-docker image rm gateway/gateway
+docker image rm springboot/gateway
 
 #building
 echo "building"
